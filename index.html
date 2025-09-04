@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machinio: Spain Market Opportunity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 380px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .kpi-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            text-align: center;
+            border-left: 5px solid #4364F7;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-8 md:my-12">
+            <h1 class="text-4xl md:text-6xl font-black gradient-text">Machinio</h1>
+            <p class="text-xl md:text-2xl font-semibold text-gray-700 mt-2">Your Strategic Briefing for the Spanish Market</p>
+            <p class="text-md text-gray-500 mt-1">Prepared for the Sales Development Representative Interview</p>
+        </header>
+
+        <main class="space-y-12">
+
+            <section class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">The Global Leader in Machinery Aggregation</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="kpi-card">
+                        <p class="text-5xl font-extrabold text-[#0052D4]">10M+</p>
+                        <p class="text-lg font-semibold text-gray-600 mt-2">Global Buyers Monthly</p>
+                    </div>
+                    <div class="kpi-card">
+                        <p class="text-5xl font-extrabold text-[#0052D4]">3,000+</p>
+                        <p class="text-lg font-semibold text-gray-600 mt-2">Active Dealerships</p>
+                    </div>
+                    <div class="kpi-card">
+                        <p class="text-5xl font-extrabold text-[#0052D4]">190+</p>
+                        <p class="text-lg font-semibold text-gray-600 mt-2">Countries Reached</p>
+                    </div>
+                </div>
+                <p class="mt-6 text-center text-gray-600 max-w-3xl mx-auto">Machinio was founded in 2013 to solve a simple problem: the market for used heavy equipment was fragmented and inefficient. Today, it stands as the most comprehensive global search engine, connecting millions of buyers with thousands of sellers, generating unparalleled value and market liquidity.</p>
+            </section>
+
+            <section>
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">The Opportunity: Spain's Industrial Backbone</h2>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Spain's economy is powered by robust construction, agriculture, and manufacturing sectors. These industries rely on a constant flow of machinery, creating a massive, untapped market for a centralized platform like Machinio. Your role is to unlock this potential.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-center mb-4">Key Machinery Sectors in Spain</h3>
+                        <p class="text-sm text-center text-gray-500 mb-4">This chart illustrates the estimated composition of the used machinery market in Spain. Construction and Agriculture are the dominant forces, representing a prime target for initial outreach and partnership development.</p>
+                        <div class="chart-container">
+                            <canvas id="spainMarketChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-center mb-4">The Machinio Advantage vs. Traditional Sales</h3>
+                        <p class="text-sm text-center text-gray-500 mb-4">This visualization directly compares the effectiveness of listing on Machinio versus relying on traditional, localized sales methods. The data clearly shows Machinio's superiority in generating high-quality leads and expanding market reach.</p>
+                        <div class="chart-container">
+                            <canvas id="comparisonChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">The SDR's Mission: Connecting Value</h2>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">As the face of Machinio in Spain, your goal is to be a consultant to dealerships. You will identify their challenges—slow-moving inventory, limited buyer pool, low-quality inquiries—and present Machinio as the definitive solution.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <div class="text-center">
+                        <div class="text-6xl font-black text-[#6FB1FC]">1</div>
+                        <p class="font-bold mt-2">Identify & Research</p>
+                        <p class="text-sm text-gray-600 max-w-xs">Find potential machinery dealerships across Spain's key sectors.</p>
+                    </div>
+                    <div class="text-4xl text-gray-300 font-light hidden md:block">→</div>
+                    <div class="text-2xl text-gray-300 font-light md:hidden">↓</div>
+                    <div class="text-center">
+                        <div class="text-6xl font-black text-[#4364F7]">2</div>
+                        <p class="font-bold mt-2">Engage & Qualify</p>
+                        <p class="text-sm text-gray-600 max-w-xs">Connect with decision-makers, understand their pain points, and present the value proposition.</p>
+                    </div>
+                    <div class="text-4xl text-gray-300 font-light hidden md:block">→</div>
+                    <div class="text-2xl text-gray-300 font-light md:hidden">↓</div>
+                    <div class="text-center">
+                        <div class="text-6xl font-black text-[#0052D4]">3</div>
+                        <p class="font-bold mt-2">Secure Partnerships</p>
+                        <p class="text-sm text-gray-600 max-w-xs">Bring qualified sellers onto the platform, fueling the growth of the Spanish marketplace.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Powerful Talking Points for Your Interview</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#0052D4]">
+                        <h3 class="font-bold text-lg mb-2">Market Penetration</h3>
+                        <p class="text-gray-600">"I see a significant opportunity to penetrate the Spanish market, especially within the construction and agriculture sectors which are underserved by modern, global sales platforms. My focus will be on demonstrating immediate ROI to these key dealerships."</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#4364F7]">
+                        <h3 class="font-bold text-lg mb-2">Consultative Approach</h3>
+                        <p class="text-gray-600">"I understand that an SDR is not just a caller, but the first consultant a potential partner speaks with. I plan to use data on buyer trends to show Spanish sellers the tangible demand they are currently missing out on."</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#6FB1FC]">
+                        <h3 class="font-bold text-lg mb-2">Long-Term Vision</h3>
+                        <p class="text-gray-600">"My goal is to establish Machinio as the undisputed go-to platform in Spain. This starts with building strong initial relationships and creating success stories that will generate organic growth and solidify our market leadership."</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer class="text-center mt-12 py-6 border-t">
+            <p class="text-gray-500">This infographic was generated to support a successful interview outcome.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const wrapLabel = (label, maxWidth) => {
+            if (label.length <= maxWidth) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        };
+        
+        const commonTooltipCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        const spainMarketCtx = document.getElementById('spainMarketChart').getContext('2d');
+        const spainMarketChart = new Chart(spainMarketCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Construction Machinery', 'Agricultural Equipment', 'Industrial & Metalworking', 'Other'],
+                datasets: [{
+                    label: 'Market Share',
+                    data: [45, 35, 15, 5],
+                    backgroundColor: [
+                        '#0052D4',
+                        '#4364F7',
+                        '#6FB1FC',
+                        '#AEC6FF'
+                    ],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                ...commonTooltipCallback,
+                plugins: {
+                    ...commonTooltipCallback.plugins,
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+
+        const comparisonCtx = document.getElementById('comparisonChart').getContext('2d');
+        const comparisonChart = new Chart(comparisonCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Global Buyer Reach', 'Lead Qualification', 'Sales Cycle Speed'],
+                datasets: [{
+                    label: 'Traditional Methods',
+                    data: [20, 40, 30],
+                    backgroundColor: '#AEC6FF',
+                    borderRadius: 4,
+                }, {
+                    label: 'The Machinio Method',
+                    data: [95, 85, 75],
+                    backgroundColor: '#0052D4',
+                    borderRadius: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                ...commonTooltipCallback,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%'
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    ...commonTooltipCallback.plugins,
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
